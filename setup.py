@@ -15,7 +15,6 @@ builtins.__SKOPT_SETUP__ = True
 
 import skopt
 
-VERSION = skopt.__version__
 
 CLASSIFIERS = ['Intended Audience :: Science/Research',
                'Intended Audience :: Developers',
@@ -32,9 +31,9 @@ CLASSIFIERS = ['Intended Audience :: Science/Research',
                'Programming Language :: Python :: 3.8']
 
 
-setup(name='scikit-optimize',
-      version=VERSION,
-      description='Sequential model-based optimization toolbox.',
+setup(name='scikit-optimize-fix',
+      version="0.9.1",
+      description='Sequential model-based optimization toolbox. Forked to fix a deprecation for NumPy>1.24.',
       long_description=open('README.rst').read(),
       url='https://scikit-optimize.github.io/',
       license='BSD 3-clause',
